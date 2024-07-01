@@ -1,0 +1,19 @@
+{
+  "name": "express",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shantanujain9/the-star-wars-lookup-2.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shantanujain9/the-star-wars-lookup-2/issues"
+  },
+  "homepage": "https://github.com/shantanujain9/the-star-wars-lookup-2#readme"
+}
