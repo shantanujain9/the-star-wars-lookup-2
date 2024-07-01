@@ -1,0 +1,124 @@
+body,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  font-family: 'News Gothic', Helvetica, sans-serif;
+  --dark1: black;
+  --light1: rgba(96, 178, 216, 0.808);
+  --dark2: rgba(6, 83, 13, 0.719);
+  --light2: white;
+  background-color: var(--light1);
+  color: var(--dark1);
+}
+
+button {
+  background-color: var(--light2);
+  color: var(--dark2);
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid var(--dark2);
+}
+
+input {
+  display: block;
+  width: 95%;
+  font-weight: bold;
+  font-size: 1.1em;
+  line-height: 1.5em;
+  border: none;
+  border-bottom: 2px solid var(--dark2);
+  outline: none;
+  margin: 5px;
+}
+
+label {
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+.small {
+  font-size: small;
+  font-weight: normal;
+}
+
+/* Characters */
+#charactersList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 0;
+}
+
+#charactersList div {
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid var(--dark2);
+  border-radius: 5px;
+  color: var(--dark2);
+  background-color: var(--light2);
+  font-weight: bold;
+}
+
+/* Character page */
+h1#name {
+  margin: 50px;
+  padding: 50x;
+}
+
+#generalInfo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  border: 20px;
+}
+
+#generalInfo p {
+  padding: 20px;
+  margin: 10px;
+  color: var(--dark2);
+  background-color: var(--light2);
+}
+
+#generalInfo span {
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+section#planets,
+section#characters,
+section#films {
+  margin: 50px;
+}
+
+section#planets ul,
+section#characters ul,
+section#films ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+section#planets a,
+section#characters a,
+section#films a {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 1.1em;
+
+  background-color: var(--light2);
+  color: var(--dark2);
+  font-weight: bold;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+  border: 1px solid var(--dark2);
+}
