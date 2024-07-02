@@ -5,14 +5,11 @@ import './App.css'
 import Characters from './components/Character'
 const App = () => {
   return (
-    <Router>
+   
     <div className="App">
-      <Switch>
-      <Characters/>
-      <Route
-</Switch>
+     <Characters/>
     </div>
-    </Router>
+
   )
 }
 
