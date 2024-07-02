@@ -5,10 +5,14 @@ import './App.css'
 import Characters from './components/Character'
 const App = () => {
   return (
+    <Router>
     <div className="App">
-      <h1>Character List</h1>
+      <Switch>
       <Characters/>
+      <Route
+</Switch>
     </div>
+    </Router>
   )
 }
 
