@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "../site.css";
+import { Link } from "react-router-dom";
 
 const Film = (props) => {
   const filmId = props.id;
@@ -15,7 +16,6 @@ const Film = (props) => {
         }
         const json_response = await response.json();
         setFunc(json_response);
-        console.log(json_response);
       } catch (error) {
         console.error("Error fetching:", error);
       }
@@ -29,15 +29,11 @@ const Film = (props) => {
     <>
       {data && characters && planets && (
         <>
-          <h1 id="name"></h1>
+          <h1 id="name">{data.title}</h1>
           <section id="generalInfo">
             <p>
               Producer: {data.producer}
               <span id="producer"></span>
-            </p>
-            <p>
-              Title: {data.title}
-              <span id="title"></span>
             </p>
             <p>Episode ID: {data.episode_id}</p>
             <p>
@@ -57,12 +53,10 @@ const Film = (props) => {
           <section id="charactersList">
             {characters.map((character) => {
               return (
-                <div
-                  onClick={() => {
-                    console.log("Hello World!");
-                  }}
-                >
-                  {character.name}
+                <div key={character.id}>
+                  <Link to={`/characters/${character.id}`}>
+                    {character.name}
+                  </Link>
                 </div>
               );
             })}
@@ -71,12 +65,8 @@ const Film = (props) => {
           <section id="planetList">
             {planets.map((planet) => {
               return (
-                <div
-                  onClick={() => {
-                    console.log("Hello World!");
-                  }}
-                >
-                  {planet.name}
+                <div key={planet.id}>
+                  <Link to={`/planets/${planet.id}`}>{planet.name}</Link>
                 </div>
               );
             })}
