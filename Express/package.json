@@ -19,6 +19,9 @@
   },
   "homepage": "https://github.com/shantanujain9/the-star-wars-lookup-2#readme",
   "dependencies": {
-    "express": "^4.19.2"
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "mongodb": "^6.8.0"
   }
 }
