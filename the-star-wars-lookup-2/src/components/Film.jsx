@@ -49,7 +49,7 @@ const Film = (props) => {
               <span id="OpeningCrawl"></span>
             </p>
           </section>
-          <h2>Character List</h2>
+          <h2>Appearing Characters</h2>
           <section id="charactersList">
             {characters.map((character) => {
               return (
@@ -61,7 +61,7 @@ const Film = (props) => {
               );
             })}
           </section>
-          <h2>Planet List</h2>
+          <h2>Appearing Planets</h2>
           <section id="planetList">
             {planets.map((planet) => {
               return (

@@ -61,7 +61,7 @@ const Planet = (props) => {
               Terrain: {data.terrain} <span id="population"></span>
             </p>
           </section>
-          <h2>Character List</h2>
+          <h2>Homeworld Belonging To</h2>
           <section id="charactersList">
             {characters.map((character) => {
               return (
@@ -73,7 +73,7 @@ const Planet = (props) => {
               );
             })}
           </section>
-          <h2>Film List</h2>
+          <h2>Films Appeared In</h2>
           <section id="filmsList">
             {films.map((film) => {
               return (

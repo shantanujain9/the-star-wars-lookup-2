@@ -57,22 +57,22 @@ const Character = (props) => {
               <span id="mass"></span>
             </p>
           </section>
-          <h2>Films List</h2>
-          <section id="filmsList">
-            {films.map((film) => {
-              return (
-                <div key={film.id}>
-                  <Link to={`/films/${film.id}`}>{film.title}</Link>
-                </div>
-              );
-            })}
-          </section>
           <h2>Homeworld</h2>
           <section id="planetList">
             {planets.map((planet) => {
               return (
                 <div key={planet.id}>
                   <Link to={`/planets/${planet.id}`}>{planet.name}</Link>
+                </div>
+              );
+            })}
+          </section>
+          <h2>Films Appeared In</h2>
+          <section id="filmsList">
+            {films.map((film) => {
+              return (
+                <div key={film.id}>
+                  <Link to={`/films/${film.id}`}>{film.title}</Link>
                 </div>
               );
             })}
